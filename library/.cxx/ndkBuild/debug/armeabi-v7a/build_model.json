@@ -1,0 +1,59 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/home/aramis/workspace/yasea",
+      "sdkFolder": "/home/aramis/Android/Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/home/aramis/workspace/yasea/library/build/intermediates",
+      "gradleModulePathName": ":library",
+      "moduleRootFolder": "/home/aramis/workspace/yasea/library",
+      "makeFile": "/home/aramis/workspace/yasea/library/src/main/cpp/Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "/home/aramis/workspace/yasea/.cxx",
+      "cxxFolder": "/home/aramis/workspace/yasea/library/.cxx",
+      "ndkFolder": "/home/aramis/Android/Sdk/ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "/home/aramis/workspace/yasea/library/build/intermediates/ndkBuild/debug/lib",
+    "objFolder": "/home/aramis/workspace/yasea/library/build/intermediates/ndkBuild/debug/obj/local",
+    "jsonFolder": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug",
+    "gradleBuildOutputFolder": "/home/aramis/workspace/yasea/library/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a",
+  "jsonFile": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/home/aramis/workspace/yasea/library/.cxx/cxx/debug/armeabi-v7a",
+  "objFolder": "/home/aramis/workspace/yasea/library/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a",
+  "buildCommandFile": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a/build_model.json",
+  "jsonGenerationLoggingRecordFile": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/home/aramis/workspace/yasea/library/.cxx/ndkBuild/debug/armeabi-v7a/compile_commands.json"
+}

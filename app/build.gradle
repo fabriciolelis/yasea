@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "net.ossrs.yasea.demo"
-        minSdkVersion 21
-        targetSdkVersion 22
+        minSdkVersion 24
+        targetSdkVersion 28
         versionCode 1
         versionName "2.6"
         ndk {
@@ -24,6 +24,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libx264.libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation project(path: ':library')
 }

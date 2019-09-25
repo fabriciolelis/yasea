@@ -76,11 +76,10 @@ public class MainActivity extends AppCompatActivity implements RtmpHandler.RtmpL
         mPublisher.setEncodeHandler(new SrsEncodeHandler(this));
         mPublisher.setRtmpHandler(new RtmpHandler(this));
         mPublisher.setRecordHandler(new SrsRecordHandler(this));
-        mPublisher.setPreviewResolution(640, 360);
-        mPublisher.setOutputResolution(360, 640);
-        mPublisher.setVideoHDMode();
+        mPublisher.setPreviewResolution(2560, 1440);
+        mPublisher.setOutputResolution(1440, 2560);
+        mPublisher.setVideoMode(30, 6000);
         mPublisher.startCamera();
-      
         mCameraView.setCameraCallbacksHandler(new SrsCameraView.CameraCallbacksHandler(){
             @Override
             public void onCameraParameters(Camera.Parameters params) {
