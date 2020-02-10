@@ -10,6 +10,7 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Surface;
 
 import com.seu.magicfilter.base.gpuimage.GPUImageFilter;
@@ -405,8 +406,28 @@ public class SrsCameraView extends GLSurfaceView implements GLSurfaceView.Render
             camera.setErrorCallback(new Camera.ErrorCallback(){
                 @Override
                 public void onError(int error, Camera camera) {
-                    //may be Camera.CAMERA_ERROR_EVICTED - Camera was disconnected due to use by higher priority user
-                    stopCamera();
+
+                    switch (error) {
+                        case Camera.CAMERA_ERROR_SERVER_DIED:
+                            camera.setPreviewCallback(null);
+                            try {
+                                camera.setPreviewDisplay(null);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            camera.release();
+                            mCamera = null;
+
+                            startCamera();
+                            break;
+                        default:
+                            Log.d("CAMERAERROR", "onError: Camera Error "+ error );
+                            //may be Camera.CAMERA_ERROR_EVICTED - Camera was disconnected due to use by higher priority user
+                            stopCamera();
+                            break;
+                    }
+
+
                 }
             });            
             
